@@ -25,7 +25,7 @@ pipeline {
                     credentialsId: 'nexus',
                     artifacts: [
                         [artifactId: 'sonarscanner-maven-aggregate',
-                         file: '/tests/target/tests-1.0-SNAPSHOT.jar',
+                         file: 'sonar-nexus/tests/target/tests-1.0-SNAPSHOT.jar',
                          type: 'jar']
                     ]
                     )
