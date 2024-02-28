@@ -16,24 +16,7 @@ pipeline {
                    sh 'mvn sonar:sonar'
                 }    
             }
-            stage('Deploy to Nexus') {
-            steps {
-                nexusArtifactUploader(
-                    nexusVersion: 'nexus3',
-                    protocol: 'http',
-                    nexusUrl: 'http://18.215.168.158:8081',
-                    groupId: 'pom.org.sonarqube',
-                    version: 'pom.1.0-SNAPSHOT',
-                    repository: 'maven-releases',
-                    credentialsId: 'nexus',
-                    artifacts: [
-                        [artifactId: 'sonarscanner-maven-aggregate',
-                         file: '/tests/target/tests-1.0-SNAPSHOT.jar',
-                         type: 'jar']
-                    ]
-                    )
-                }
-            }
+            
         
         }
 }
