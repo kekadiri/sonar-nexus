@@ -71,7 +71,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://3.87.137.195:9000
+                    http://54.237.244.28:9000
                 </sonar.host.url>
     <sonar.login>squ_5932d91a2f715ed4be0a47825949a98573773404</sonar.login>
   </properties>
@@ -102,11 +102,11 @@
          <distributionManagement>
     <repository>
       <id>nexus-Repo</id>
-      <url>http://18.215.168.158:8081/repository/maven-releases/</url>
+      <url>http://18.215.161.44:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>nexus-Repo</id>
-      <url>http://18.215.168.158:8081/repository/maven-snapshots//</url>
+      <url>http://18.215.161.44:8081/repository/maven-snapshots//</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
