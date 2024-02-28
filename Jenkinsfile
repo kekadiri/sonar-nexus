@@ -31,6 +31,7 @@ pipeline {
                          file: 'target/my-app-1.0-SNAPSHOT.jar',
                          type: 'jar']
                     ]
+                    )
                 }
             }
         
