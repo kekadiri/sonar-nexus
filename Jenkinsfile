@@ -1,11 +1,7 @@
 pipeline {
     agent any
         stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/kekadiri/sonar-nexus.git'
-            }
-        }
+        
             stage('build') {
                 steps {
                     sh 'mvn clean package'
