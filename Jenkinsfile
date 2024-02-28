@@ -30,6 +30,7 @@ pipeline {
                         [artifactId: 'sonarscanner-maven-aggregate',
                          file: 'target/my-app-1.0-SNAPSHOT.jar',
                          type: 'jar']
+                    ]
                 }
             }
         
