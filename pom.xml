@@ -82,7 +82,7 @@
 						</execution>
 					</executions>
 					<configuration>
-						<serverId>nexus-snapshots</serverId>
+						<serverId>nexus-releases</serverId>
 						<nexusUrl>http://54.227.185.244:8081/nexus</nexusUrl>
 						<skipStaging>true</skipStaging>
 					</configuration>
